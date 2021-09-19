@@ -5,3 +5,6 @@ app = Flask(__name__)
 def index():
     return "Bye code!"
     
+    @app.route('/sum/<int:a>/<int:b>')
+    def sum(a: int, b: int):
+        return a + b
