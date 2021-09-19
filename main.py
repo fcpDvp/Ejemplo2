@@ -4,5 +4,5 @@ HOST="localHost"
 PORT=4000
 DEBUG=True
 
-if __name__ **'__master__':
-    master()
+if __name__ == '__master__':
+    app.run(HOST, PORT, DEBUG)
